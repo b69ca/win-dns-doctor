@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "tool": "win-dns-doctor",
+  "collectedAtUtc": "2026-01-10T12:00:00Z",
+  "platform": "Synthetic Windows fixture",
+  "evidence": {
+    "host": "example.invalid",
+    "system": {
+      "success": true,
+      "addresses": [
+        "192.0.2.10"
+      ],
+      "error": ""
+    },
+    "adapters": [
+      {
+        "name": "Ethernet",
+        "index": 1,
+        "servers": [
+          "192.0.2.53"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "server": "192.0.2.53",
+        "type": "A",
+        "success": true,
+        "addresses": [
+          "192.0.2.11"
+        ],
+        "error": ""
+      }
+    ],
+    "hostsEntries": [
+      {
+        "address": "192.0.2.10",
+        "name": "example.invalid"
+      }
+    ],
+    "directQueriesSkipped": false,
+    "serversCapped": false
+  },
+  "issues": []
+}
